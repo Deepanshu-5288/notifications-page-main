@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    background-color: hsl(211, 68%, 94%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+h1, p{
+    margin: 0;
+}
+p{
+    color: hsl(219, 14%, 63%);
+    line-height: 1.5;
+    font-weight: 400;
+}
+main{
+    width: 40rem;
+    background-color: white;
+    border-radius: .625rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 85vh;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    align-items: center;
+}
+.number{
+    padding:.1rem .4rem;
+    background-color: hsl(219, 85%, 26%);
+    border-radius: .3125rem;
+    color: white;
+    font-size: 1rem;
+    margin-left:.5rem ;
+}
+.mark-read:hover{
+    font-weight: 800;
+    cursor: pointer;
+    color: hsl(219, 85%, 26%);
+}
+.name{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.name:hover{
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+}
+.post{
+    text-decoration: none;
+    font-weight: 600;
+    color: hsl(219, 14%, 63%);
+}
+.post:hover{
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+}
+.club{
+    text-decoration: none;
+    font-weight: 600;
+    color: hsl(219, 85%, 26%)
+}
+.club:hover{
+    font-weight: 800;
+}
+.notification-div{
+    display: flex;
+    column-gap: .8rem;
+    position: relative;
+}
+.profile-pic{
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+    top: .5rem;
+}
+.pic-comment{
+    margin-left: auto;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.pic-comment:hover{
+    cursor: pointer;
+}
+.notification-div-unread{
+    background-color: hsl(211, 68%, 94%);
+    border-radius: .3125rem;
+    padding: .9rem;
+}
+.notification-div-unread:hover{
+   
+    background-color: hsl(205, 33%, 90%);
+    cursor: pointer;
+}
+.unread-dot{
+    width: .5rem;
+    height: .5rem;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    position: relative;
+    top: .7rem;
+    display: block;
+}
+
+.direct-msg:hover{
+    border-radius: .3125rem;
+    background-color: hsl(211, 68%, 94%);
+    padding: .8rem;
+    cursor: pointer;
+}
+.unread-dot-hide{
+    display: none;
+}
+
+@media screen and (max-width: 45rem) {
+    body{
+        min-height: 130vh;
+    }
+    main{
+        width: 23rem;
+        min-height: 120vh;
+    }
+    .notification-div-msg{
+        width: 80%;
+    }
+}
